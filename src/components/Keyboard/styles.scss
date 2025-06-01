@@ -1,0 +1,114 @@
+textarea {
+  display: block;
+  width: 100%;
+  height: 150px;
+  border: 1px solid #a9a9a9;
+  border-radius: 10px;
+}
+
+.keyboard {
+  margin-top: 20px;
+
+  .one,
+  .two,
+  .three,
+  .four,
+  .five {
+    display: flex;
+    position: relative;
+
+    span {
+      display: block;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      left: -15px;
+      bottom: 30px;
+      border-radius: 99px;
+      background: #c51310;
+      border: 2px solid #f1f1f1;
+
+      &.text-upper {
+        display: block;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: -15px;
+        bottom: 30px;
+        border-radius: 99px;
+        background: #1fc510;
+      }
+    }
+
+    .default-btn {
+      padding: 10px 20px;
+      width: 60px;
+      height: 60px;
+      margin: 6px;
+      font-size: 25px;
+      border-radius: 5px;
+      box-shadow: -5px -5px 10px #f1f1f1, 5px 5px 10px #000;
+      border: none;
+      text-transform: lowercase;
+
+      &.delete-btn {
+        width: 100px;
+        font-size: 15px;
+      }
+
+      &.tab-btn {
+        font-size: 15px;
+        width: 100px;
+      }
+
+      &.caps-btn,
+      &.return-btn {
+        font-size: 15px;
+        width: 120px;
+      }
+
+      &.shift-btn {
+        width: 155px;
+        font-size: 15px;
+      }
+
+      &.return-btn {
+        width: 115px;
+      }
+
+      &.space-btn {
+        width: 400px;
+        font-size: 15px;
+      }
+
+      &.ctrl-btn,
+      &.alt-btn {
+        width: 80px;
+        font-size: 15px;
+      }
+
+      &.alt-btn {
+        width: 60px;
+      }
+
+      &.cmd-btn {
+        font-size: 13px;
+        width: 100px;
+        background: rgb(54, 54, 54);
+        color: #f1f1f1;
+      }
+
+      &.active {
+        box-shadow: -5px -5px 10px #f1f1f1, 5px 5px 10px #1fc510;
+
+        &:hover {
+          box-shadow: -3px -3px 8px #f1f1f1, 3px 3px 8px #1fc510;
+        }
+      }
+
+      &:hover {
+        box-shadow: -3px -3px 8px #f1f1f1, 3px 3px 8px #000;
+      }
+    }
+  }
+}
